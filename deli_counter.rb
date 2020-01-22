@@ -9,6 +9,7 @@ def line(katz_deli)
       string += "#{i+1}. #{name} "
     end
   end
+  string[string.length-1].delete
   puts string
 end
 
