@@ -2,7 +2,7 @@ require 'pry'
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli.size == 0
+  if katz_deli.size < 1
     puts "The line is currently empty."
   else 
     string = "The line is currently:"
@@ -10,7 +10,6 @@ def line(katz_deli)
       string += " #{i+1}. #{name}"
     end
   end
-  
   puts string
 end
 
